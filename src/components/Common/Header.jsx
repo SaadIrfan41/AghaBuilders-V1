@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from '../Common/Navigation';
 import { NavLink } from 'react-router-dom';
-
+import logo from '../../images/LogoBlue.png'
 
 var bnr = require('./../../images/background/bg-5.png');
 
@@ -9,7 +9,7 @@ class Header extends React.Component {
 
     constructor(props){
         super(props);
-        this.state = {logo: require('./../../images/LogoBlue.png')};
+        this.state = {logo: logo};
     }
 
     state = { isSearchActive: false, isQuoteActive: false };

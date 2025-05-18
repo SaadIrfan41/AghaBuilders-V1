@@ -103,14 +103,14 @@ const Navigation = (props) => {
           </ul>
         </li>
 
-        <li className={isActive('/error') ? 'active' : ''}>
+        {/* <li className={isActive('/error') ? 'active' : ''}>
           <NavLink to=''>Pages</NavLink>
           <ul className='sub-menu'>
             <li>
               <NavLink to='/error'>Error 404</NavLink>
             </li>
           </ul>
-        </li>
+        </li> */}
 
         <li className={isActive('/Gallery') ? 'active' : ''}>
           <NavLink to='/Gallery'>Gallery</NavLink>
@@ -146,7 +146,7 @@ const Navigation = (props) => {
           </ul>
         </li> */}
 
-        <li
+        {/* <li
           className={
             location.pathname.startsWith('/icon')
               ? 'submenu-direction active'
@@ -183,7 +183,7 @@ const Navigation = (props) => {
               <NavLink to='/iconfont'>Icon Font</NavLink>
             </li>
           </ul>
-        </li>
+        </li> */}
       </ul>
     </div>
   )
