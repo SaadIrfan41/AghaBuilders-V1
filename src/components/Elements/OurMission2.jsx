@@ -1,6 +1,43 @@
 import React from 'react';
 
 class OurMission2 extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            username: '',
+            email: '',
+            phone: '',
+            message: '',
+        };
+    }
+
+    handleChange = (e) => {
+        this.setState({ [e.target.name]: e.target.value });
+    };
+
+    handleSubmit = async (e) => {
+        e.preventDefault();
+        const { username, email, phone, message } = this.state;
+        try {
+            const response = await fetch(`https://agha-builders-email.vercel.app/api/email`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ username, email, phone, message }),
+            });
+            if (response.ok) {
+                alert('Email sent successfully!');
+                this.setState({ username: '', email: '', phone: '', message: '' });
+            } else {
+                alert('Failed to send Email.');
+            }
+        } catch (error) {
+            // console.log(error)
+            alert('An error occurred.');
+        }
+    };
+
     render() {
         return (
             <>
@@ -12,25 +49,25 @@ class OurMission2 extends React.Component {
                                 <div className="col-md-6 col-sm-6">
                                     <div className="contact-home1-left contact-home1-left-v2 bg-dark p-a30 m-b30 p-t50">
                                         <h3 className="text-white m-t0"><span className="font-weight-100">Get In</span> Touch</h3>
-                                        <form className="cons-contact-form2 form-transparent" method="post" action="">
+                                        <form className="cons-contact-form2 form-transparent" method="post" action="" onSubmit={this.handleSubmit}>
                                             <div className="input input-animate">
                                                 <label htmlFor="name">Name</label>
-                                                <input type="text" name="username" id="name" required />
+                                                <input type="text" name="username" id="name" required value={this.state.username} onChange={this.handleChange} />
                                                 <span className="spin" />
                                             </div>
                                             <div className="input input-animate">
                                                 <label htmlFor="email">Email</label>
-                                                <input type="email" name="email" id="email" required />
+                                                <input type="email" name="email" id="email" required value={this.state.email} onChange={this.handleChange} />
                                                 <span className="spin" />
                                             </div>
                                             <div className="input input-animate">
                                                 <label htmlFor="Phone">Phone</label>
-                                                <input type="text" name="phone" id="Phone" required />
+                                                <input type="text" name="phone" id="Phone" required value={this.state.phone} onChange={this.handleChange} />
                                                 <span className="spin" />
                                             </div>
                                             <div className="input input-animate">
                                                 <label htmlFor="message">Textarea</label>
-                                                <textarea name="message" id="message" required defaultValue={""} />
+                                                <textarea name="message" id="message" required value={this.state.message} onChange={this.handleChange} />
                                                 <span className="spin" />
                                             </div>
                                             <div className="text-left p-t10">

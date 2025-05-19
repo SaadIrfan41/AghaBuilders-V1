@@ -2,15 +2,15 @@ import React from 'react';
 import Navigation from '../Common/Navigation';
 import { NavLink } from 'react-router-dom';
 
+
 var bnr = require('./../../images/background/bg-5.png');
 
 class Header extends React.Component {
 
-    // constructor(props){
-    //     super(props);
-    //     // this.state = {logo: require('./../../images/LogoBlue.png')};
-    //     this.state = {logo: require('/assets/media/images/LogoBlue.png')};
-    // }
+    constructor(props){
+        super(props);
+        this.state = {logo: require('./../../images/LogoBlue.png')};
+    }
 
     state = { isSearchActive: false, isQuoteActive: false };
 
@@ -76,7 +76,7 @@ class Header extends React.Component {
                                 <div className="logo-header">
                                     <div className="logo-header-inner logo-header-one">
                                         <NavLink to={"/"}>
-                                            <img src={'/assets/media/images/LogoBlue.png'} alt="Agha Builders" />
+                                            <img src={this.state.logo} alt="Agha Builders" />
                                         </NavLink>
                                     </div>
                                 </div>

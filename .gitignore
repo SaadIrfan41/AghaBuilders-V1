@@ -35,3 +35,7 @@ pnpm-debug.log*
 
 # Optional: if you're using react-scripts and caching tools
 .cache/
+
+#ENV
+.env
+
