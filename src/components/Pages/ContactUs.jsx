@@ -8,6 +8,42 @@ var bnrimg = require('./../../images/banner/4.jpg');
 // const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 class ContactUs extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            username: '',
+            email: '',
+            phone: '',
+            message: '',
+        };
+    }
+
+    handleChange = (e) => {
+        this.setState({ [e.target.name]: e.target.value });
+    };
+
+    handleSubmit = async (e) => {
+        e.preventDefault();
+        const { username, email, phone, message } = this.state;
+        try {
+            const response = await fetch(`https://agha-builders-email.vercel.app/api/email`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ username, email, phone, message }),
+            });
+            if (response.ok) {
+                alert('Email sent successfully!');
+                this.setState({ username: '', email: '', phone: '', message: '' });
+            } else {
+                alert('Failed to send Email.');
+            }
+        } catch (error) {
+            alert('An error occurred.');
+        }
+    };
+
     render() {
         // const defaultProps = {
         //     center: {
@@ -30,7 +66,7 @@ class ContactUs extends React.Component {
                                 {/* CONTACT FORM*/}
                                 <div className="row">
                                     <div className="col-md-8 col-sm-6">
-                                        <form className="contact-form cons-contact-form" method="post" action="form-handler.php">
+                                        <form className="contact-form cons-contact-form" onSubmit={this.handleSubmit}>
                                             <div className="contact-one m-b30">
                                                 {/* TITLE START */}
                                                 <div className="section-head">
@@ -42,16 +78,51 @@ class ContactUs extends React.Component {
                                                 </div>
                                                 {/* TITLE END */}
                                                 <div className="form-group">
-                                                    <input name="username" type="text" required className="form-control" placeholder="Name" />
+                                                    <input 
+                                                        name="username" 
+                                                        type="text" 
+                                                        required 
+                                                        className="form-control" 
+                                                        placeholder="Name" 
+                                                        value={this.state.username}
+                                                        onChange={this.handleChange}
+                                                    />
                                                 </div>
                                                 <div className="form-group">
-                                                    <input name="email" type="text" className="form-control" required placeholder="Email" />
+                                                    <input 
+                                                        name="email" 
+                                                        type="email" 
+                                                        className="form-control" 
+                                                        required 
+                                                        placeholder="Email" 
+                                                        value={this.state.email}
+                                                        onChange={this.handleChange}
+                                                    />
                                                 </div>
                                                 <div className="form-group">
-                                                    <textarea name="message" rows={4} className="form-control " required placeholder="Message" defaultValue={""} />
+                                                    <input 
+                                                        name="phone" 
+                                                        type="text" 
+                                                        className="form-control" 
+                                                        required 
+                                                        placeholder="Phone" 
+                                                        value={this.state.phone}
+                                                        onChange={this.handleChange}
+                                                    />
+                                                </div>
+                                                <div className="form-group">
+                                                    <textarea 
+                                                        name="message" 
+                                                        rows={4} 
+                                                        className="form-control" 
+                                                        required 
+                                                        placeholder="Message" 
+                                                        value={this.state.message}
+                                                        onChange={this.handleChange}
+                                                    />
                                                 </div>
                                                 <div className="text-right">
-                                                    <button name="submit" type="submit" value="Submit" className="site-button btn-effect">submit
+                                                    <button name="submit" type="submit" className="site-button btn-effect">submit
                                                     </button>
                                                 </div>
                                             </div>
