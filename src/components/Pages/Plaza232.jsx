@@ -187,8 +187,8 @@ class Plaza232  extends React.Component {
                                         </div>
                                         <ul className="social-icons social-square social-darkest m-b0">
                                            <li>
-        						<a href="mailto:aghabuildersofficial@gmail.com" className="fa fa-google" target="_blank" rel="noopener noreferrer">
-    						<span className="sr-only">Email aghabuildersofficial@gmail.com</span>
+        						<a href="mailto:info@aghabuilders.com" className="fa fa-google" target="_blank" rel="noopener noreferrer">
+    						<span className="sr-only">Email info@aghabuilders.com</span>
     						</a>
     						</li>
     <li>

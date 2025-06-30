@@ -60,11 +60,12 @@ class About4 extends React.Component {
                                             {images.map((item, index) => (
                                                 <div className="item" key={index}>
                                                     <div className="ow-img">
-                                                    <NavLink to="/about"><img src={item} alt=""/></NavLink>
+                                                    <NavLink to="/about" title="About Agha Builders">
+                                                        <img src={item} alt={`Agha Builders project ${index + 1}`} />
+                                                    </NavLink>
                                                     </div>
                                                 </div>
                                             ))}
-                                        
                                         </OwlCarousel>
                                         
                                     </div>
@@ -72,22 +73,26 @@ class About4 extends React.Component {
                                 <div className="col-lg-7 col-md-7">
                                     <div className="m-about-containt text-black p-t80">
                                         <div className="m-about-years bg-moving" style={{backgroundImage:"url(" + bnr1 + ")"}}>
-                                            <span className="text-primary large-title">35+</span>
+                                            <span className="text-primary large-title" aria-label="35+ Years of Legacy">35+</span>
                                             <span className="large-title-info">Years of Legacy</span>
                                         </div>
-                                        <h3 className="font-weight-600">From one man’s vision to a legacy of building excellence.</h3>
-                                        <p>Agha Builders began as a one-man operation driven by passion, precision, and purpose. Over 35+ years, it has grown into a trusted name in the industry—delivering hundreds of successful projects ranging from residential homes and commercial complexes to large-scale industrial and infrastructure developments.
-
-Our commitment to quality, innovation, and client satisfaction has been the foundation of our journey. Every structure we build is a reflection of our values—crafted to endure, designed to inspire.</p>
+                                        <h2 className="font-weight-600">From one man’s vision to a legacy of building excellence.</h2>
+                                        <p>
+                                            Agha Builders began as a one-man operation driven by passion, precision, and purpose. Over 35+ years, it has grown into a trusted name in the industry—delivering hundreds of successful projects ranging from residential homes and commercial complexes to large-scale industrial and infrastructure developments.
+                                            <br /><br />
+                                            Our commitment to quality, innovation, and client satisfaction has been the foundation of our journey. Every structure we build is a reflection of our values—crafted to endure, designed to inspire.
+                                        </p>
                                         <div className="author-info p-t20">
                                             {/* <div className="author-signature">
-                                                <img src={require('./../../images/Signature+Black.png')} alt="Signature" width={150} />
+                                                <img src={require('./../../images/Signature+Black.png')} alt="Signature of Ghulam Murtaza, CEO & Founder" width={150} />
                                             </div> */}
                                             <div className="author-name">
-                                                <h4 className="m-t0">Ghulam Murtaza</h4>
+                                                <h3 className="m-t0">Ghulam Murtaza</h3>
                                                 <p>CEO &amp; Founder</p>
                                             </div>
-                                            <NavLink to="/contactus" className="site-button-secondry btn-effect"><span>Get in touch</span></NavLink>
+                                            <NavLink to="/contactus" className="site-button-secondry btn-effect" title="Contact Agha Builders">
+                                                <span>Get in touch</span>
+                                            </NavLink>
                                         </div>
                                     </div>
                                 </div>

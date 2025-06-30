@@ -26,7 +26,7 @@ class ContactUs extends React.Component {
         e.preventDefault();
         const { username, email, phone, message } = this.state;
         try {
-            const response = await fetch(`https://agha-builders-email.vercel.app/api/email`, {
+            const response = await fetch(`https://aghabuildersemailserver.vercel.app/api/email`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -151,7 +151,7 @@ class ContactUs extends React.Component {
                                                     <div className="icon-xs"><i className="fa fa-envelope" /></div>
                                                     <div className="icon-content">
                                                         <h5 className="m-t0 font-weight-500">Email address</h5>
-                                                        <p>aghabuildersofficial@gmail.com</p>
+                                                        <p>info@aghabuilders.com</p>
                                                     </div>
                                                 </div>
                                                 <div className="mt-icon-box-wraper left">

@@ -58,7 +58,7 @@ class Header extends React.Component {
                             <div className="row">
                                 <div className="mt-topbar-left clearfix">
                                     <ul className="list-unstyled e-p-bx pull-right">
-                                        <li><i className="fa fa-envelope" /> aghabuildersofficial@gmail.com</li>
+                                        <li><i className="fa fa-envelope" /> info@aghabuilders.com</li>
                                         <li><i className="fa fa-phone" />+92 334 2224202</li>
 
                                         <li><i className="fa fa-clock-o" />Sat-Thu | 10.00am to 10:00pm </li>
@@ -116,7 +116,7 @@ class Header extends React.Component {
                                                     <div className="icon-xs m-b20 scale-in-center"><i className="fa fa-envelope" /></div>
                                                     <div className="icon-content">
                                                         <h5 className="m-t0 font-weight-500">Email address</h5>
-                                                        <p>aghabuildersofficial@gmail.com</p>
+                                                        <p>info@aghabuilders.com</p>
                                                     </div>
                                                 </div>
                                                 <div className="mt-icon-box-wraper center p-b30">
@@ -130,8 +130,8 @@ class Header extends React.Component {
                                             <div className="full-social-bg">
                                                 <ul>
                                                     <li>
-        						<a href="mailto:aghabuildersofficial@gmail.com" className="fa fa-google" target="_blank" rel="noopener noreferrer">
-    						<span className="sr-only">Email aghabuildersofficial@gmail.com</span>
+        						<a href="mailto:info@aghabuilders.com" className="fa fa-google" target="_blank" rel="noopener noreferrer">
+    						<span className="sr-only">Email info@aghabuilders.com</span>
     						</a>
     						</li>
     <li>

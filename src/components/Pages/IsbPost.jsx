@@ -103,7 +103,7 @@ class IsbPost extends React.Component {
                                                             <div className="widget_social_inks">
                                                                 <ul className="social-icons social-md social-square social-dark m-b0">
                                                                    <li>
-        						<a href="mailto:aghabuildersofficial@gmail.com" className="fa fa-google" target="_blank" rel="noopener noreferrer" />
+        						<a href="mailto:info@aghabuilders.com" className="fa fa-google" target="_blank" rel="noopener noreferrer" />
     						</li>
     <li>
         <a href="https://www.instagram.com/aghabuildersofficial/" className="fa fa-instagram" target="_blank" rel="noopener noreferrer" />

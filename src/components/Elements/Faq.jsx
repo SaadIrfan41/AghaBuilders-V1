@@ -159,7 +159,7 @@ class Faq extends React.Component {
                                                 <div className="icon-content text-white">
                                                     <h4 className="mt-tilte text-uppercase font-weight-600 m-b20">Get Free Consultation</h4>
                                                     <p>Your needs are unique? Our experts will prepare the best solution for you!</p>
-                                                    <NavLink to="/about" className="site-button-link white" data-hover="Read More">Call Now <i className="fa fa-angle-right arrow-animation" /></NavLink>
+                                                    <a href='https://wa.me/+923342224202' target="_blank" rel="noopener noreferrer"  className="site-button-link white" data-hover="Read More">Call Now <i className="fa fa-angle-right arrow-animation" /></a>
                                                 </div>
                                             </div>
                                         </div>

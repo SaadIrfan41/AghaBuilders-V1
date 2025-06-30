@@ -18,7 +18,7 @@ class Specialization extends React.Component {
                                         <div className="figcaption">
                                             <h4>Construction</h4>
                                             <p>Engineering your dreams with us.</p>
-                                            <NavLink to="/project-detail" ><i className="link-plus bg-primary" /></NavLink>
+                                            <NavLink to="/House354" ><i className="link-plus bg-primary" /></NavLink>
                                         </div>
                                     </div>
                                 </div>
@@ -28,7 +28,7 @@ class Specialization extends React.Component {
                                         <div className="figcaption">
                                             <h4>Renovation</h4>
                                             <p>Where old meets bold seamlessly</p>
-                                            <NavLink to="/project-detail" ><i className="link-plus bg-primary" /></NavLink>
+                                            <NavLink to="/House08" ><i className="link-plus bg-primary" /></NavLink>
                                         </div>
                                     </div>
                                 </div>
@@ -38,7 +38,7 @@ class Specialization extends React.Component {
                                         <div className="figcaption bg-dark">
                                             <h4>Architecture</h4>
                                             <p>Building dreams from blueprint to skyline.</p>
-                                            <NavLink to="/project-detail" ><i className="link-plus bg-primary" /></NavLink>
+                                            <NavLink to="/Plaza232" ><i className="link-plus bg-primary" /></NavLink>
                                         </div>
                                     </div>
                                 </div>
@@ -46,7 +46,7 @@ class Specialization extends React.Component {
                                     <div className="mt-box our-speciallization-content">
                                         <h3 className="m-t0"> Structural Integrity<br /> <span className="font-weight-100"> Guaranteed</span> </h3>
                                         <p>Structural integrity guaranteed. Don't gamble on foundations - engineered precision from footing to rooftop.</p>
-                                        <NavLink to="/project-masonary"  className="site-button-secondry btn-effect">View All</NavLink>
+                                        <NavLink to="/ProjectsPortfolio"  className="site-button-secondry btn-effect">View All</NavLink>
                                     </div>
                                 </div>
                             </div>

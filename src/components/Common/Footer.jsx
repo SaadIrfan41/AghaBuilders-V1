@@ -67,8 +67,8 @@ class Footer extends React.Component {
                                         </ul> */}
                                         <ul className="social-icons  mt-social-links">
                                             <li>
-                                                <a href="mailto:aghabuildersofficial@gmail.com" className="fa fa-google" target="_blank" rel="noopener noreferrer">
-                                                    <span className="sr-only">Email aghabuildersofficial@gmail.com</span>
+                                                <a href="mailto:info@aghabuilders.com" className="fa fa-google" target="_blank" rel="noopener noreferrer">
+                                                    <span className="sr-only">Email info@aghabuilders.com</span>
                                                 </a>
                                             </li>
                                             <li>
@@ -105,7 +105,7 @@ class Footer extends React.Component {
                                         <h4 className="widget-title">Contact Us</h4>
                                         <ul className="widget_address">
                                             <li>Plaza 232, Nadir Rd, Bahria P7, Intellectual Village, Rawalpindi</li>
-                                            <li>aghabuildersofficial@gmail.com</li>
+                                            <li>info@aghabuilders.com</li>
                                             <li> (+92) 334 222 4202 </li>
                                             <li> (+92) 300 055 5148 </li>
                                         </ul>
@@ -177,25 +177,70 @@ class Footer extends React.Component {
                         <div className="container">
                             <div className="row">
                                 <div className="mt-footer-bot-center">
-                                    <span className="copyrights-text">© 2022 Agha Builders. Developed by hanansemab.com.</span>
+                                    <span className="copyrights-text">© 2025 Agha Builders. Developed by <a href='https://hanansemab.com/' target="_blank" rel="noopener noreferrer" style={{color:'White'}} > hanansemab.com </a></span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+{/* Floating Chat Button and WhatsApp optimized for mobile */}
+<style>
+{`
+@media (max-width: 600px) {
+  .lets-chat-float {
+    right: 54px !important;
+    bottom: 60px !important;
+    font-size: 13px !important;
+    padding: 5px 8px !important;
+  }
+  .whatsapp-float {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 20px !important;
+    right: 10px !important;
+    bottom: 55px !important; /* leave space for go-to-top */
+  }
+  .go-to-top-btn {
+    right: 10px !important;
+    bottom: 10px !important;
+  }
+}
+@media (min-width: 601px) {
+  .lets-chat-float {
+    right: 65px !important; /* leave space for go-to-top and WhatsApp */
+    bottom: 76px !important;
+    padding: 5px 8px !important;
+  }
+  .whatsapp-float {
+    right: 11px !important; /* leave space for go-to-top */
+    bottom: 70px !important;
+    width: 48px !important;
+    height: 48px !important;
+    font-size: 24px !important;
+  }
+  .go-to-top-btn {
+    right: 10px !important;
+    bottom: 10px !important;
+  }
+}
+`}
+</style>
 <div
+    className="lets-chat-float"
     style={{
         position: 'fixed',
-        bottom: '75px', // slightly above the WhatsApp button
-        right: '4.5%',
+        bottom: '70px',
+        right: '70px',
         zIndex: 1001,
         background: '#fff',
         color: '#333',
         borderRadius: '8px',
-        padding: '8px 16px',
+        padding: '5px 8px',
         boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
         display: 'flex',
-        fontSize: '15px'
+        fontSize: '15px',
+        alignItems: 'center',
+        whiteSpace: 'nowrap'
     }}
 >
     Let's Chat
@@ -207,19 +252,19 @@ class Footer extends React.Component {
     rel="noopener noreferrer"
     style={{
         position: 'fixed',
-        bottom: '8%',
-        right: '8px',
+        bottom: '20px',
+        right: '35px',
         zIndex: 1000,
         background: '#ff5b0f',
         color: '#fff',
         borderRadius: '100%',
-        width: '60px',
-        height: '60px',
+        width: '48px',
+        height: '48px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         boxShadow: '0 2px 5px rgba(0,0,0,0.3)',
-        fontSize: '32px',
+        fontSize: '24px',
         textDecoration: 'none'
     }}
     aria-label="Chat on WhatsApp"

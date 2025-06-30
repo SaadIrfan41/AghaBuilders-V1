@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from "react";
 import Header from "./../Common/Header";
-import Footer from "./../Common/Footer";
 import Banner from "./../Elements/Banner";
-// import ShortcodesNav from './../Elements/ShortcodesNav'
 import { NavLink } from "react-router-dom";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
+import Footer from "./../Common/Footer";
+
 var bnrimg = require("./../../images/banner/6.jpg");
 
 const filters = [
-  { label: "Electric Automation", filter: "cat-16" },
-  { label: "Elevator Installations", filter: "cat-15" },
-  { label: "Solar Solutions", filter: "cat-17" },
   { label: "House 349", filter: "cat-1" },
   { label: "House 354", filter: "cat-2" },
   { label: "House 08", filter: "cat-3" },
   { label: "house no 333", filter: "cat-10" },
+  { label: "Electric Automation", filter: "cat-16" },
+  { label: "Elevator Installations", filter: "cat-15" },
   { label: "Ch Electronics", filter: "cat-4" },
   { label: "Allied School", filter: "cat-5" },
   { label: "Indian High Commission", filter: "cat-6" },
@@ -24,6 +23,7 @@ const filters = [
   { label: "BOP Demolition", filter: "cat-11" },
   { label: "Plaza 232", filter: "cat-12" },
   { label: "Sika Installations", filter: "cat-14" },
+  { label: "Solar Solutions", filter: "cat-17" },
   { label: "Misc", filter: "cat-18" },
 ];
 
@@ -368,21 +368,21 @@ const projects = [
     image: require("./../../images/gallery/House354/36.jpg"),
     filter: "cat-2",
   },
-  {
-    thumb: require("./../../images/gallery/House354/37.jpg"),
-    image: require("./../../images/gallery/House354/37.jpg"),
-    filter: "cat-2",
-  },
-  {
-    thumb: require("./../../images/gallery/House354/38.jpg"),
-    image: require("./../../images/gallery/House354/38.jpg"),
-    filter: "cat-2",
-  },
-  {
-    thumb: require("./../../images/gallery/House354/39.jpg"),
-    image: require("./../../images/gallery/House354/39.jpg"),
-    filter: "cat-2",
-  },
+  // {
+  //   thumb: require('./../../images/gallery/House354/37.jpg'),
+  //   image: require('./../../images/gallery/House354/37.jpg'),
+  //   filter: 'cat-2',
+  // },
+  // {
+  //   thumb: require('./../../images/gallery/House354/38.jpg'),
+  //   image: require('./../../images/gallery/House354/38.jpg'),
+  //   filter: 'cat-2',
+  // },
+  // {
+  //   thumb: require('./../../images/gallery/House354/39.jpg'),
+  //   image: require('./../../images/gallery/House354/39.jpg'),
+  //   filter: 'cat-2',
+  // },
   {
     thumb: require("./../../images/gallery/House354/40.jpg"),
     image: require("./../../images/gallery/House354/40.jpg"),

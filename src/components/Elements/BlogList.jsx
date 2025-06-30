@@ -53,8 +53,8 @@ class BlogList extends React.Component {
                                         <div className="widget_social_inks pull-right">
                                             <ul className="social-icons social-radius social-dark m-b0">
                                                 <li>
-                                                    <a href="mailto:aghabuildersofficial@gmail.com" className="fa fa-google" target="_blank" rel="noopener noreferrer">
-                                                        <span className="sr-only">Email aghabuildersofficial@gmail.com</span>
+                                                    <a href="mailto:info@aghabuilders.com" className="fa fa-google" target="_blank" rel="noopener noreferrer">
+                                                        <span className="sr-only">Email info@aghabuilders.com</span>
                                                     </a>
                                                 </li>
                                                 <li>

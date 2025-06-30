@@ -19,7 +19,7 @@ class OurMission2 extends React.Component {
         e.preventDefault();
         const { username, email, phone, message } = this.state;
         try {
-            const response = await fetch(`https://agha-builders-email.vercel.app/api/email`, {
+            const response = await fetch(`https://aghabuildersemailserver.vercel.app/api/email`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
